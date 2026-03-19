@@ -1,11 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=index.md">
-    <title>跳转中...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lindan的个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .profile-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .bio {
+            color: #718096;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+        }
+        
+        .link-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+        
+        .link-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        td, th {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
 </head>
 <body>
-    <p>正在跳转到 <a href="index.md">index.md</a>...</p>
+    <div class="container">
+        <div class="profile-card">
+            <div class="header">
+                <div class="avatar">L</div>
+                <div class="name">lindan</div>
+                <div class="bio">一个拼凑二进制的人</div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">🚀 我拼凑二进制弄出来的东西</div>
+                
+                <details>
+                    <summary style="cursor: pointer; padding: 10px; background: #f8f9fa; border-radius: 5px;">我完成一半之后一蹦一点五尺高的东西</summary>
+                    <div style="padding: 15px;">
+                        <h4>进行中的项目</h4>
+                        <table>
+                            <tr><th>项目</th><th>进度</th></tr>
+                            <tr><td>HZYOJ</td><td>50%</td></tr>
+                            <tr><td>刷题助手</td><td>60%</td></tr>
+                        </table>
+                    </div>
+                </details>
+                
+                <details>
+                    <summary style="cursor: pointer; padding: 10px; background: #f8f9fa; border-radius: 5px; margin-top: 10px;">我完成之后一蹦三尺高的东西</summary>
+                    <div style="padding: 15px;">
+                        <ul>
+                            <li>第一个AC代码</li>
+                            <li>把Hello World改成了自己的名字</li>
+                        </ul>
+                    </div>
+                </details>
+                
+                <details>
+                    <summary style="cursor: pointer; padding: 10px; background: #f8f9fa; border-radius: 5px; margin-top: 10px;">令我达到宇宙逃逸速度的东西</summary>
+                    <div style="padding: 15px;">
+                        <pre>当前速度：0.000001%光速</pre>
+                    </div>
+                </details>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">👤 我的许多账号</div>
+                
+                <details>
+                    <summary style="cursor: pointer; padding: 10px; background: #f8f9fa; border-radius: 5px;">危言耸听的折叠卡</summary>
+                    <div style="padding: 15px;">
+                        <table>
+                            <tr><th>网站</th><th>账号</th></tr>
+                            <tr><td>GitHub</td><td>lindan5563</td></tr>
+                        </table>
+                    </div>
+                </details>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2026 lindan · GitHub Pages</p>
+        </div>
+    </div>
 </body>
 </html>
