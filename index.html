@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lindan5563引导主页</title>
     <style>
-        /* 重置默认边距，确保背景铺满 */
         * {
             margin: 0;
             padding: 0;
@@ -13,25 +12,17 @@
         }
 
         body {
-            /* 关键：设置 Bing 每日一图作为背景 */
-            /* 这里的 API 会直接返回一张高清图片，可以作为背景地址 */
             background-image: url('https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN');
-            
-            /* 背景图片适配设置 */
-            background-size: cover;          /* 覆盖整个屏幕，保持比例 */
-            background-position: center;     /* 图片居中显示 */
-            background-repeat: no-repeat;    /* 不重复平铺 */
-            background-attachment: fixed;    /* 滚动时背景固定不动 */
-            
-            /* 布局设置：让内容垂直水平居中 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
         }
-
-        /* 内容容器：加半透明白色底，保证文字在复杂背景上清晰可读 */
         .container {
             width: 1000px;
             max-width: 90%;
@@ -48,8 +39,6 @@
             margin-bottom: 16px;
             font-size: 2em;
         }
-
-        /* 修正原代码中的 h0 标签，改用 p 标签并设置样式 */
         .subtitle {
             color: #555;
             font-size: 1.1em;
@@ -79,7 +68,7 @@
     <div class="container">
         <h1>欢迎来到 lindan5563 的主页！</h1>
         <p class="subtitle">由于 Github Pages 功能太弱，已将主页迁移至 Cloud Flare Workers Free</p>
-        <a href="https://123.123.123.123">点击跳转（123.123.123.123）</a>
+        <a href="https://luogu-blog.lby5563.workers.dev">点击跳转</a>
     </div>
 
 </body>
